@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="foco">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <main class="app">
+        <header class="app__header">
+            <figure class="app__logo-figure">
+                <img class="app__logo-image" src="./img/logo-image.png" alt="Logo do Método Pomodoro">
+            </figure>
+        </header>
+        <section class="app__section-banner-container">
+            <h1>
+                Otimize a sua produtividade,<br>
+                <strong class="app__title-strong">mergulhe no que importa.</strong>
+            </h1>
+            <figure class="app__image-figure">
+                <img class="app__image" src="./img/foco.png" alt="Cozinheiro mexendo um molho com uma colher de pau em uma panela no fogo">
+            </figure>
+        </section>
+        <section class="app__section-card-container">
+            <div class="app__card">
+                <ul class="app__card-list">
+                    <li class="app__card-list-item">
+                        <button data-contexto="foco" class="app__card-button app__card-button--foco active">Foco</button>
+                    </li>
+                    <li class="app__card-list-item">
+                        <button data-contexto="short" class="app__card-button app__card-button--curto active">Descanso Curto</button>
+                    </li>
+                    <li class="app__card-list-item">
+                        <button data-contexto="long" class="app__card-button app__card-button--longo active">Descanso Longo</button>
+                    </li>
+                </ul>
+                <div id="timer" class="app__card-timer"></div>
+                <ul class="app__card-list">
+                    <li class="app__card-list-item">
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </li>
+                    <li class="app__card-list-item">
+                        <label class="app__card-list-label" for="alternar-musica">
+                            Música
+                        </label>
+                    </li>
+                </ul>
+                <div class="app__card-primary-button-wrapper">
+                    <button id="start-pause" class="app__card-primary-button">
+                        <img class="app__card-primary-butto-icon" src="./img/play_arrow.png" alt="Ícone botão play">
+                        <span>Começar</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class="app__footer">
+            <p class="app__footer-text">
+                Projeto fictício e sem fins comerciais. Imagens geradas por IA no DALL-E.Desenvolvido por @facarlos90. 
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
